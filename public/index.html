@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Motivated Electrical Engineer — Portfolio</title>
+
+  <meta name="description" content="Portfolio of a motivated Electrical Engineer — MASc. University of Windsor. Embedded systems, VLSI, web & software developer." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Functions base (adjustable) - set to the full Cloud Functions URL to avoid relying on hosting rewrites -->
+  <meta name="functions-base" content="https://us-central1-mohit-sharma-portfolio.cloudfunctions.net/generateContent">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER / NAV -->
+    <header>
+      <div class="brand">
+        <div class="logo"><img src="assets/UoW.png" alt="University of Windsor Logo" height=54.35px width=44px></div>
+        <div>
+          <div style="font-weight:700">Motivated Electrical Engineer</div>
+          <div style="font-size:12px;color:var(--muted)">MASc., University of Windsor</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="cta" href="#contact">Get in touch</a>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero in-view" id="home" style="opacity:1; transform:none">
+        <div class="card hero-left">
+          <span class="tagline">Motivated Electrical Engineer</span>
+          <h1>Design. Build. Automate.</h1>
+
+          <p class="summary">
+            Motivated electrical engineer with nine years of work experience and a Master of Applied Science in Electrical Engineering from the University of Windsor.
+            Experienced across Embedded Systems, VLSI design, web and software development, and full SDLC practices. Strong at critical thinking, problem solving,
+            teaching, and cross-team collaboration with demonstrated success in research, industry projects and volunteer initiatives.
+          </p>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="chip" href="#projects">Selected Projects</a>
+            <a class="chip" href="#experience">Work Experience</a>
+            <a class="chip" href="#skills">Technical Skills</a>
+          </div>
+        </div>
+
+        <aside class="card hero-right">
+          <div class="avatar"><img src="assets/Mohit.jpg" alt="Mohit Sharma" height=206px width=160px></div>
+          <div class="small-muted">Master of Applied Science — Electrical Engineering</div>
+          <div class="quick-links" style="margin-top:12px">
+            <a class="chip" href="assets/resume.pdf" title="Download CV">Download CV</a>
+            <a class="chip" href="https://github.com/12562" target="_blank">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/mohit12562" title="LinkedIn">LinkedIn</a>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="in-view">
+        <div class="section-title">
+          <h2><br>About Me<br></h2>
+          <div class="muted">Summary & education</div>
+        </div>
+        <div class="about-grid">
+          <div class="card">
+            <h3 style="margin-top:0">Professional background</h3>
+            <p class="muted">
+              I have nine years of combined experience in industry and research with strengths in innovation, critical thinking and problem-solving.
+              My work spans VLSI physical design, embedded software, product validation, automation, and web development. I have experience working in Agile teams,
+              automating validation flows, and delivering projects that improved turn-around time and test coverage.
+            </p>
+
+            <ul class="bullets">
+              <li>Teaching experience as a Graduate Assistant (led labs, graded assignments, demoed projects).</li>
+              <li>Volunteer experience with non-profit organizations and community initiatives.</li>
+              <li>Strong communicator — oral & poster presentations at international conferences.</li>
+            </ul>
+          </div>
+
+          <aside>
+            <div class="edu card">
+              <h3>Education</h3>
+              <p class="muted"><strong>Master of Applied Science, Electrical Engineering</strong><br>
+                University of Windsor — Sep 2020 – Dec 2022</p>
+              <p class="muted small-muted">Thesis: Design Space Exploration of the physical design of 12nm AI processor.</p>
+              <hr style="opacity:0.06;margin:12px 0">
+              <p class="muted"><strong>Bachelor of Technology, Electronics & Communication</strong><br>
+                Jamia Millia Islamia — Jul 2011 – May 2015</p>
+              <p class="muted">Major project: Triple Port RAM implemented and synthesized on Xilinx Spartan-3E</p>
+            </div>
+
+            <div class="volunteer card" style="margin-top:12px">
+              <h4>Volunteer & Teaching</h4>
+              <p class="muted">Active volunteer in community programs, and experience as TA / Graduate Assistant delivering labs and holding office hours for 50+ students.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="section-title">
+          <h2><br>Technical Skills<br></h2>
+          <div class="muted">Organized by category</div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>Programming Languages</h4>
+            <div class="skill-list">C, C++, Java, GoLang</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Cloud Platforms</h4>
+            <div class="skill-list">Azure DevOps</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Embedded Development</h4>
+            <div class="skill-list">Embedded C, Vector Tools (Canoe 11, CANdelaStudio, DaVinci, BusMaster), Renesas Flash Programmer</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Web Development</h4>
+            <div class="skill-list">MySQL, HTML, JavaScript, CSS, PHP, jQuery, React, Redux, Bootstrap, Datatables</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Scripting Languages</h4>
+            <div class="skill-list">csh, bash, Tcl/Tk, Python, Perl, SQL</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Design Tools</h4>
+            <div class="skill-list">MATLAB, ModelSim/QuestaSim, OpenLane/OpenROAD, Design Compiler, Quartus, Cadence tools, Pspice, Arduino, Bazel</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Hardware Description Languages</h4>
+            <div class="skill-list">Verilog, VHDL</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Hardware Design Flows</h4>
+            <div class="skill-list">FPGA, ASIC (OpenLane, Innovus, Genus, Design Compiler)</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Operating Systems</h4>
+            <div class="skill-list">Linux (Ubuntu, RHEL, CentOS, SLES), Windows (11/10/8), MacOS</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Version Control</h4>
+            <div class="skill-list">git, CVS, SVN</div>
+          </div>
+
+          <div class="skill-card">
+            <h4>ML Frameworks</h4>
+            <div class="skill-list">TensorFlow, Jupyter notebooks, oneAPI AI Analytics Toolkit</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="section-title">
+          <h2><br>Projects<br></h2>
+          <div class="muted">Selected work demonstrating VLSI, C++, Python, ML and embedded skills</div>
+        </div>
+
+        <div style="display:grid;gap:12px">
+          <!-- Example project entry. Replace '#' with actual GitHub/video links -->
+          <div class="project card">
+            <strong>Design Space Exploration of the physical design of 12nm AI processor</strong>
+            <small class="muted">MASc thesis project — used OpenLane, Genus, Design Compiler for synthesis & PnR of picorv32 CPU and CSI 4X Lane.</small>
+            <div><a href="https://uwindsor.scholaris.ca/items/d017933c-d638-4863-be26-47b3aad61305/full" target="_blank" rel="noopener">Thesis</a>
+                 <br>
+                 <a href="https://ieeexplore.ieee.org/document/10405922" target="_blank" rel="noopener">IEEE Paper</a></div>
+          </div>
+
+          <div class="project card">
+            <strong>Triple Port RAM</strong>
+            <small class="muted">Design and synthesis on Xilinx Spartan-3E — Verilog implementation and testbench.</small>
+            <div><a href="https://github.com/12562/ECS-812" target="_blank" rel="noopener">GitHub: Triple_Port_RAM</a></div>
+          </div>
+
+          <div class="project card">
+            <strong>Hypergraph Partitioning (KL algorithm)</strong>
+            <small class="muted">Implementation in C++ as part of Physical Design Automation coursework.</small>
+            <div><a href="https://github.com/12562/ELEC-8590/tree/master/KL_algorithm" target="_blank" rel="noopener">GitHub / Code</a></div>
+          </div>
+
+          <div class="project card">
+            <strong>Machine Learning models</strong>
+            <small class="muted">CNN for image classification (dogs vs cats), healthcare cost regression, SMS ham/spam classifier — TensorFlow / scikit-learn experiments.</small>
+            <div><a href="#" target="_blank" rel="noopener">Notebooks & Demos</a></div>
+          </div>
+
+          <!-- Additional projects (placeholders for items in your CV) -->
+          <div class="project card">
+            <strong>FPGA labs & mini-games</strong>
+            <small class="muted">Fibonacci number generator, nand2tetris CPU, Whack-a-Mole Arduino project, Minesweeper in Tcl/Tk.</small>
+            <div><a href="#" target="_blank" rel="noopener">Videos & Repos</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="section-title">
+          <h2><br>Experience<br></h2>
+          <div class="muted">Reverse chronological</div>
+        </div>
+
+        <div class="timeline">
+          <!-- Most recent -> older -->
+          <div class="job">
+            <h3>Software Engineer — Ethica Channel Enablement</h3>
+            <div class="meta">Toronto, ON — Feb 2025 – Jul 2025</div>
+            <p class="muted">
+              Designed and developed an Auto-Configuration application in GoLang. Performed full SDLC (planning, requirements, design, development, testing, deployment),
+              tracked features in Azure DevOps, used git branching and created unit tests achieving 100% test coverage using go testcover.
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>Embedded Software Developer — Apag CoSyst</h3>
+            <div class="meta">Windsor, ON — Oct 2023 – Oct 2024</div>
+            <p class="muted">
+              Implemented AutoSAR Classic features, improved BusMaster scripts (single script for multi-node multi-channel simulation), performed Polyspace MISRA C analysis,
+              documented developer tests, and reduced software effort and simulation time significantly.
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>Thrift Store Manager — ACRT</h3>
+            <div class="meta">Windsor, ON — Jan 2023 – Oct 2023</div>
+            <p class="muted">
+              Managed day-to-day operations, trained volunteers and improved store visibility via marketing suggestions that increased sales.
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>Product Validation Engineer — Cadence Design Systems</h3>
+            <div class="meta">Noida, India — Jul 2015 – Apr 2021</div>
+            <p class="muted">
+              DFT scan insertion and ATPG pattern generation automation, regression task management, developed web pages to gather test-suite statistics,
+              wrote and maintained a large suite of automated testcases, and improved turnaround times via scripting and tooling.
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>Graduate Assistant — University of Windsor</h3>
+            <div class="meta">Windsor, ON — May 2021 – Dec 2022</div>
+            <p class="muted">
+              Lead TA for ELEC-4430 and ELEC-3300, created labs and assignments, held 80+ office hours weekly, prepared lab demos and graded exams/assignments.
+              Implemented lab assignments in VHDL/FPGA and improved student completion metrics.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI TOOLS -->
+      <section id="ai-tools">
+        <div class="section-title">
+          <h2><br>AI Tools<br></h2>
+          <div class="muted">Interactive portfolio enhancements powered by Firebase AI</div>
+        </div>
+
+        <div class="ai-grid">
+          <div class="card">
+            <h3>AI Project Description Generator</h3>
+            <p class="muted small-muted">Generate engaging project summaries based on your inputs.</p>
+            <input id="pgTitle" placeholder="Project title" />
+            <input id="pgTech" placeholder="Technologies (comma separated)" />
+            <textarea id="pgDetails" placeholder="Short details"></textarea>
+            <button class="btn" id="pgGen">Generate description</button>
+            <div id="pgOutput" class="ai-output"></div>
+          </div>
+
+          <div class="card">
+            <h3>Resume Analyzer</h3>
+            <p class="muted small-muted">Paste a job posting and get a skill-gap analysis.</p>
+            <textarea id="jobText" placeholder="Paste job posting here"></textarea>
+            <button class="btn" id="analyzeBtn">Analyze</button>
+            <pre id="analysisResult" class="ai-output"></pre>
+          </div>
+
+          <div class="card">
+            <h3>AI Search</h3>
+            <p class="muted small-muted">Search your portfolio content semantically (e.g. “FPGA synthesis”).</p>
+            <input id="aiSearchQuery" placeholder="Search projects…" />
+            <button class="btn" id="aiSearchBtn">Search</button>
+            <pre id="searchResult" class="ai-output"></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="section-title">
+          <h2><br>Contact<br></h2>
+          <div class="muted">Let's connect</div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <form id="contactForm" onsubmit="submitContact(event)">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Hi — I'm reaching out about..."></textarea>
+              </div>
+
+              <div style="display:flex;gap:10px;align-items:center">
+                <button class="btn" type="submit">Send message</button>
+                <div class="small-muted">Or email directly: <a style="color:var(--accent)" href="mailto:mohit12562@gmail.com">mohit12562@gmail.com</a></div>
+              </div>
+
+              <div id="formFeedback" style="margin-top:10px;color:var(--muted)"></div>
+            </form>
+          </div>
+
+          <aside class="card">
+            <h4 style="margin-top:0">Professional info</h4>
+            <p class="muted"><strong>Email:</strong> mohit12562@gmail.com</p>
+            <p class="muted"><strong>Location:</strong> Toronto, Canada</p>
+            <p class="muted"><strong>Open to:</strong> Full-time roles, contract work, research collaborations</p>
+
+            <hr style="opacity:0.06;margin:14px 0">
+            <div class="small-muted">
+              Social: <a href="https://github.com/12562" style="color:var(--accent)">GitHub</a> · <a href="https://www.linkedin.com/in/mohit12562" style="color:var(--accent)">LinkedIn</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <footer>
+        <div class="muted">© <span id="year"></span> Motivated Electrical Engineer — Built with HTML, CSS & JavaScript</div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- External JS -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-functions-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
