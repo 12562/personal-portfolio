@@ -69,10 +69,10 @@ window.addEventListener("scroll", () => {
 
 // -------------------- Firebase Setup --------------------
 const firebaseConfig = {
-  apiKey: "AIzaSyABzHZE5XdkloetWXqdno2Zshj-iBeTyZ0",
+  apiKey: "<your-key>",
   authDomain: "mohit-sharma-portfolio.firebaseapp.com",
   projectId: "mohit-sharma-portfolio",
-  appId: "1:303671941271:web:1e21f63b166d91f5ea71d2"
+  appId: "<app-id>"
 };
 firebase.initializeApp(firebaseConfig);
 
