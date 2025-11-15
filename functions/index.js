@@ -58,9 +58,17 @@ async function getGeminiKey() {
   return GEMINI_KEY;
 }
 
-// Diagnostic helper: list available models from the Generative Language API
+// Diagnostic helper: list available models from the Vertex AI API
 async function listModels(key) {
-  const listUrl = "https://generativelanguage.googleapis.com/v1beta/models";
+  const projectId = process.env.GCLOUD_PROJECT;
+  const region = process.env.FUNCTION_REGION || "us-central1";
+
+  if (!projectId) {
+    logger.error("GCLOUD_PROJECT environment variable not set for listModels.");
+    return null;
+  }
+
+  const listUrl = `https://${region}-aiplatform.googleapis.com/v1/projects/${projectId}/locations/${region}/publishers/google/models`;
   try {
     // Try Bearer first
     let r = await fetch(listUrl, {
@@ -96,10 +104,17 @@ async function callGeminiAPI(prompt) {
   const accessToken = await getAccessToken();
 
   let res;
-  // Use a supported model (from ListModels output). gemini-2.5-flash is available
-  // and supports generateContent in v1beta.
-  const baseUrl =
-    "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
+  // Construct the Vertex AI endpoint using environment variables
+  const projectId = process.env.GCLOUD_PROJECT;
+  const region = process.env.FUNCTION_REGION || "us-central1";
+  const modelId = "gemini-1.5-flash-001"; // Use a supported model for Vertex
+
+  if (!projectId) {
+    logger.error("GCLOUD_PROJECT environment variable not set.");
+    return "Configuration error";
+  }
+
+  const baseUrl = `https://${region}-aiplatform.googleapis.com/v1/projects/${projectId}/locations/${region}/publishers/google/models/${modelId}:generateContent`;
 
   // Attempt with ADC Bearer token first if available
   if (accessToken) {
