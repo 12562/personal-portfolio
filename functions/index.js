@@ -107,7 +107,8 @@ async function callGeminiAPI(prompt) {
   // Construct the Vertex AI endpoint using environment variables
   const projectId = process.env.GCLOUD_PROJECT;
   const region = process.env.FUNCTION_REGION || "us-central1";
-  const modelId = "gemini-1.5-flash-001"; // Use a supported model for Vertex
+
+  const modelId = "gemini-1.5-flash"; // Use a supported model for Vertex
 
   if (!projectId) {
     logger.error("GCLOUD_PROJECT environment variable not set.");
